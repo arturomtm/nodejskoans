@@ -1,13 +1,13 @@
-var	RTPProtocol = require('./buffer-koans'),
-	udp = require('./dgram-koans'),
+var RTPProtocol = require('./buffer-koans'),
+    udp = require('./dgram-koans'),
     nodeMp3 = require('NMp3');
 
 var library = new nodeMp3.Mp3Library({ basedir: '../data/songs/' });
 
 library.on("ready", function(){
 
-	var mp3source = new nodeMp3.Mp3Source(library);
-	var rtpprotocol = new RTPProtocol();
+    var mp3source = new nodeMp3.Mp3Source(library);
+    var rtpprotocol = new RTPProtocol();
     var udpsender = new udp.Sender();
     udpsender.enableStats(true);
 
@@ -18,7 +18,7 @@ library.on("ready", function(){
         rtpprotocol.pack(frame);
     });
 
-	rtpprotocol.on('packet', function(packet){
+    rtpprotocol.on('packet', function(packet){
         udpsender.broadcast(packet);
     });
 
