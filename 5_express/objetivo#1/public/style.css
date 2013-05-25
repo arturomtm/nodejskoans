@@ -1,0 +1,32 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+body {font:normal 12px 'Segoe UI', Arial,Verdana; color:#D1D1D1; background: #000}
+.group:after{content:" ";display:block;height:0;clear:both;visibility:hidden;}
+* html .group{ height:1%;} *:first-child+html .group{min-height:1px;}
+a:focus {outline: none}
+.container {padding:50px 0; width:1100px; margin:0 auto}
+.container h1 {position:relative; font-size:22px; font-weight:bold; padding: 0 0 3px; border-bottom: 4px solid #666; margin-bottom:30px; color:#D1D1D1; text-shadow:0 -1px rgba(0,0,0,1)}
+.container h1 a {position:absolute; right:0px; font: bold 12px 'Segoe UI', Arial,Verdana; color: #fff; top: 10px; text-decoration: none}
+.container h1 a:hover {text-decoration: underline}
+#cont {padding:30px 0 0; font:normal 12px Verdana, Geneva, sans-serif; width:274px; margin:0 auto}
+h3 {padding:0 0 3px; margin-bottom:15px; border-bottom:3px solid #333; font-weight: bold; font-size: 14px; text-shadow:0 -1px #000}
+.container .example {float:left; width: 330px; margin-right: 50px}
+#login {box-shadow:0 0 30px rgba(0,0,0,0.4); -moz-box-shadow:0 0 30px rgba(255,255,255,0.4); -webkit-box-shadow:0 0 30px rgba(255,255,255,0.4); -moz-border-radius:20px; -webkit-border-radius:18px; padding:30px; background:#111; border: 1px solid #313131}
+#cont .field {padding: 0 0 10px;}
+#cont .field input {width:200px; text-shadow:1px 1px #f4f4f4; color:#666; font:bold 11px Verdana, Geneva, sans-serif; padding:6px; border:1px solid #000}
+#cont .submit {text-align:right}
+#cont button {border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px; background:#444; color:#fff; text-shadow:0 -1px #000; border:none; padding:5px 15px; font-weight:bold; font-size:11px; cursor:pointer; text-align: center}
+#cont button:hover {background:#555}
+#cont button:active {background:#777; position:relative; top:1px; outline:none}
+div.results {font-size:11px}
+div.info {padding-bottom:10px}
+.tab-info {float:left; padding-top:30px; width:650px}
+#tabs li a {font-size:12px; text-shadow:0 -1px rgba(0,0,0,0.3)}
+#minus, #refreshB {float:left; width:20px; display: none}
+#refreshB {display:block; width:auto;}
+#plus {float:right;width:20px}
+#resize-buttons {padding:10px; position:relative}
+.position-info {position:absolute; left:50px; top:9px; width: 180px}
+#status-message {left:70px; top:16px; width: 170px; text-align:center}
+#refreshB {padding-left: 5px !important; padding-right:5px !important}
+.ui-widget-content {border:1px solid #000; background-image: none; -moz-box-shadow:0 0 60px rgba(255,255,255,0.1)}
+.footer {padding:40px 0 0; text-shadow:0 -1px #000}

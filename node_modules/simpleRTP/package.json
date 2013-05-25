@@ -1,0 +1,19 @@
+{
+  "name": "simpleRTP",
+  "version": "0.1.0",
+  "description": "A simple Real Time Protocol implementation for mp3 sources",
+  "main": "RTPProtocol.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "mp3",
+    "RTP",
+    "real",
+    "time",
+    "protocol"
+  ],
+  "author": "Arturo Muñoz de la Torre",
+  "license": "MIT"
+}

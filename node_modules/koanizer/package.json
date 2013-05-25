@@ -1,0 +1,15 @@
+{
+  "name": "koanizer",
+  "version": "0.1.0",
+  "description": "Simple tool to create koans from a module",
+  "main": "koanizer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "koans"
+  ],
+  "author": "Arturo Muñoz de la Torre",
+  "license": "MIT"
+}

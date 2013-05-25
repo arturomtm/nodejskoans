@@ -1,0 +1,12 @@
+{
+  "name": "NMp3",
+  "version": "0.1.0",
+  "description": "Utilities for Mp3 manipulation in Node",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Arturo Muñoz de la Torre",
+  "license": "MIT"
+}

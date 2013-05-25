@@ -1,0 +1,46 @@
+
+<html>
+	<head>
+		<script type="text/javascript" src="/javascripts/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/actions.js"></script>
+		<link rel="stylesheet" href="/stylesheets/fonts.css" />
+		<link rel="stylesheet" href="/stylesheets/whizr.css" />
+		<title> <%= username %> </title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="profile">
+				<img src="/<%= username %>/profilepic"  class="profile_pic big" alt="" />
+				<h1><%= name %></h1>
+				<h2>@<%= username %></h2>
+					<%  if (whizr) {
+						  if ( whizr.username == username ) { %>
+							<form action="/logout" method="post">
+								<input type="submit" class="normalButton" value="LOGOUT"/>
+							</form>					
+					   <% }
+					} %>
+			</div>
+
+			<div class="actions layoutactions">
+				<% if (!whizr) {%>
+					<form action="/login" method="post" id="loginForm">
+						<input type="text" name="username" placeholder="Login" autocomplete="off"> <br>
+						<input type="password" name="password" placeholder="Password"> <br>
+						<a href="#" id="registerLink">Registrarse</a>
+						<input type="submit" class="normalButton" value="LOGIN"/>
+					</form>
+					<form action="/register" method="post" id="registerForm">
+						<input type="text" name="username" placeholder="Login"/> <br />
+						<input type="password" name="password" placeholder="Password"/> <br />
+						<input type="text" name="name" placeholder="Nombre y apellidos"/> <br />
+						<input type="text" name="email" placeholder="Email"/> <br />
+						<a href="#" id="loginLink">Entrar</a>
+						<input type="submit" class="normalButton" value="REGISTER"/>
+					</form>				
+				<% } %>		
+			</div>
+		</div>
+
+	</body>
+</html>

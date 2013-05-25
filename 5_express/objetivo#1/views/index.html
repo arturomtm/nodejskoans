@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/javascripts/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/actions.js"></script>
+		<link rel="stylesheet" href="/stylesheets/fonts.css" />
+		<link rel="stylesheet" href="/stylesheets/whizr.css" />
+		<title> Whizr. Sucede. Aqu&iacute; y ahora.</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="brand">
+				<h1 class="megalogo">WHIZR</h1>
+				<h2 class="slogan">SUCEDE. AQUI Y AHORA.</h2>
+			</div>
+			<div class="actions">
+				<form action="/login" method="post" id="loginForm">
+					<input type="text" name="username" placeholder="Nombre de usuario" autocomplete="off"> <br>
+					<input type="password" name="password" placeholder="Contrase&ntilde;a"> <br>
+					<a href="#" id="registerLink" class="formLink">Registrarse</a>
+					<input type="submit" class="normalButton" value="ENTRAR"/>
+				</form>
+				<form action="/register" method="post" id="registerForm">
+					<input type="text" name="username" placeholder="Nombre de usuario"/> <br />
+					<input type="password" name="password" placeholder="Contrase&ntilde;a"/> <br />
+					<input type="text" name="name" placeholder="Nombre y apellidos"/> <br />
+					<input type="text" name="email" placeholder="Email"/> <br />
+					<a href="#" id="loginLink" class="formLink">Entrar</a>
+					<input type="submit" class="normalButton" value="REGISTRAR"/>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>

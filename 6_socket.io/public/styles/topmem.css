@@ -1,0 +1,147 @@
+body{
+	margin: 0px;
+	//background-image: url("/images/users-bg.jpg");
+	background-color: #83D0D7; //#47BAC4;
+	
+}
+
+header{
+	background-color: #2A2A2A;
+	height: 68px;
+	margin-top: 10px;
+}
+
+.star{
+	position: relative;
+	top: -5px;
+}
+
+#title{
+	position: relative;
+	left: 34%;
+	font: 42px Anton;
+	color: #83D0D7; //#8BC682; #DC5038;
+	text-shadow: 1px 1px 0px white; //#B9B8B5;
+}
+
+#users{
+	position: relative;
+	margin: 0 auto;
+	width: 922px;
+	height: 100px;
+	/*
+	width: 60%;
+	margin: 0 auto;
+	left: 325px;
+	*/
+}
+
+#joinForm{
+	/*position: relative;
+	top: 25px;*/
+	float: left;
+	display: inline;
+	margin-top: 20px;
+	margin-left: 75px; /*porque score1 aun no es visible y sin margen a la izq, el formulario se desplaza, esto lo corrige y no da sensacion de recolocarse cuando aparece el score*/
+	/*lo dejamos igual que la clase .player para que no se note el cambio*/
+	width: 298px;
+	padding: 1px;
+}
+
+input[type=text]{
+    background: rgba(255, 255, 255, 0.3);
+    border: medium none;
+	padding-left: 5px;
+    /*box-shadow: 2px 2px 4px black;
+	margin: 1px;
+	background-color: #83D0D7;
+    position: relative;
+    top: 10px;	
+	*/
+	vertical-align: middle;
+    color: white;
+    font-size: 24px;
+    height: 35px;
+    width: 195px;
+}
+
+input[type=submit]{
+    background-color: #83D0D7;
+    border: medium none;
+    color: #2A2A2A;
+    font-family: Anton;
+    font-size: 35px;
+    height: 55px;
+    text-shadow: 1px 1px 0 white;
+    vertical-align: middle;
+    width: 75px;
+}
+
+#versus{
+    color: white;
+    font-family: Anton;
+    font-size: 65px;
+    margin: 0 55px;
+	float: left;
+    /*vertical-align: middle;
+	position: relative;
+	left: 380px;*/
+}
+
+.player{
+	font-family: 'Pacifico';
+	font-size: 45px;
+	color: white;
+	/*vertical-align: middle;*/
+	/* sin posicionamiento admite un ancho fijo, si está vacío le ponemos un padding para que ocupe espacio*/
+	width: 298px;
+	padding: 1px;
+}
+
+#player1{
+	float: left;
+	display:none;
+	text-align: right;
+}
+
+#playerTwo{
+	width: 550px;
+}
+
+#player2{
+	float: left;
+	display:none;
+	text-align: left;
+}
+.score{
+	float: left;
+	margin-top: 10px;
+	padding: 1px;
+	width: 73px;	
+	height: 73px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    /*margin: 0 40px;
+	vertical-align: middle;*/
+	font-family: 'Anton';
+    font-size: 44px;
+	text-align: center;
+	color: white;
+}
+#score1, #score2{
+    /*float: left;
+    margin-left: 250px;*/
+	display: none;
+}
+#table{
+	position: relative;
+	/*width: 80%;*/
+	width: 940px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.3);
+}
+.card{
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+}
