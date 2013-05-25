@@ -1,5 +1,5 @@
 var udp = require('dgram'),
-	net = require('net'),
+    net = require('net'),
     RTPProtocol = require('simpleRTP'),
     nodeMp3 = require('NMp3'),
     koanize = require('koanizer');
@@ -8,12 +8,12 @@ koanize(this);
 
 var RemotePrompt = function(library){
 
-	var sessionsDB = {};
+    var sessionsDB = {};
     /*
         KOAN #1
         should instantiate a TCP Server
     */
-	this.server = net.___();
+    this.server = net.___();
 
     this.listen = function(port){
         /*
@@ -23,67 +23,66 @@ var RemotePrompt = function(library){
     	this.server.___(port);
     };
 
-	this.close = function(){
-		this.server.close();
-	};
+    this.close = function(){
+        this.server.close();
+    };
 
     /*
         KOAN #3
         should attend incoming connections
     */	
-	this.server.on(___, function(connection){
+    this.server.on(___, function(connection){
 
-		var remoteIP = connection.remoteAddress;
+        var remoteIP = connection.remoteAddress;
         /*
             KOAN #4
             should write in connection socket
         */
         connection.___("Welcome to your command line playlist manager, " + remoteIP);
 		
-		if (remoteIP in sessionsDB){
+	if (remoteIP in sessionsDB){
             /*
                 KOAN #5
                 should be able to close connections
             */
-			connection.___("Duplicated session, closing.");
-			return;
-		};
+        connection.___("Duplicated session, closing.");
+            return;
+        };
 
-		sessionsDB[remoteIP] = true;
+        sessionsDB[remoteIP] = true;
 
-		var source = new nodeMp3.Mp3Source(library);
-		var rtpprotocol = new RTPProtocol();
-    	var udpSocket = udp.createSocket('udp4');
+        var source = new nodeMp3.Mp3Source(library);
+        var rtpprotocol = new RTPProtocol();
+        var udpSocket = udp.createSocket('udp4');
 
-		rtpprotocol.on('packet', function(packet){
-			udpSocket.send(packet, 0, packet.length, 5002, remoteIP);
-		});
+        rtpprotocol.on('packet', function(packet){
+            udpSocket.send(packet, 0, packet.length, 5002, remoteIP);
+        });
 
         source.on('frame', function(frame){
             rtpprotocol.pack(frame);
         });
 
-		source.on('track', function(trackName){
-			connection.write("Now playing " + trackName + "\r\n# ");
-		});
+        source.on('track', function(trackName){
+            connection.write("Now playing " + trackName + "\r\n# ");
+        });
 
-		source.on('pause', function(trackName){
-			connection.write(trackName + " paused.\r\n# ");
-		});
+        source.on('pause', function(trackName){
+            connection.write(trackName + " paused.\r\n# ");
+        });
 
-		source.on('listEnd', function(){
-			var seconds = 1//10;
-			connection.write("End of the list reached.Closing in " + seconds + " seconds\r\n# ");
+        source.on('listEnd', function(){
+            var seconds = 1//10;
+            connection.write("End of the list reached.Closing in " + seconds + " seconds\r\n# ");
 /*
     KOAN #6
     should trigger a inactivity timeout on the socket
 */
-			connection.___(seconds * 1000, function(){
-      			delete sessionsDB[this.remoteAddress];
-    console.log("cerrando")
-				connection.end("Your session has expired. Closing.");
-			});
-		});
+            connection.___(seconds * 1000, function(){
+                delete sessionsDB[this.remoteAddress];
+                connection.end("Your session has expired. Closing.");
+            });
+        });
 /*
     KOAN #7
     should receive incoming data from connections
