@@ -1,4 +1,4 @@
-var	RTPProtocol = require('./RTPProtocol'),
+var	RTPProtocol = require('simpleRTP'),
 	listHttpServer = require('./http-koans'),
 	udp = require('dgram'),
     nodeMp3 = require('NMp3');
