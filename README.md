@@ -22,7 +22,7 @@ Para poder ejecutar las aplicaciones y los Koans, es necesario instalar Jasmine,
 
 	npm -g install express@3.0.0 socket.io@0.9 jasmine-node
 
-¡Estas aplicaciones est�n en constante evoluci�n y se necesita tu ayuda para mejorarlas!
+¡Estas aplicaciones están en constante evolución y se necesita tu ayuda para mejorarlas!
 
 
 ENG
