@@ -4,25 +4,25 @@ Node.js Koans (GPL Licensed)
 ESP
 ------
 
-Los Koans para Node.js son una colecci髇 de aplicaciones para el aprendizaje de Node.js a trav閟 de Koans. Los Koans son huecos en el c骴igo que deben completarse y que se validan con casos de prueba, en este caso escritos con [Jasmine](http://pivotal.github.io/jasmine/)
+Los Koans para Node.js son una colecci贸n de aplicaciones para el aprendizaje de Node.js a trav茅s de Koans. Los Koans son huecos en el c贸digo que deben completarse y que se validan con casos de prueba, en este caso escritos con [Jasmine](http://pivotal.github.io/jasmine/)
 
-Las aplicaciones se han creado como ejemplos para el libro gratuito ["Introducci髇 a Node.js a trav閟 de Koans"](http://nodejskoans.com)
+Las aplicaciones se han creado como ejemplos para el libro gratuito ["Introducci贸n a Node.js a trav茅s de Koans"](http://nodejskoans.com)
 
-En el libro, se cubren varios temas relacionados con la creaci髇 de aplicaciones para Node.js con sus API dgram, net y http, y con los m骴ulos [Express](http://expressjs.com) (v3.0) and [Socket.IO](http://socket.io) (v0.9).
+En el libro, se cubren varios temas relacionados con la creaci贸n de aplicaciones para Node.js con sus API dgram, net y http, y con los m贸dulos [Express](http://expressjs.com) (v3.0) and [Socket.IO](http://socket.io) (v0.9).
 
-Para que el aprendizaje sea interactivo, en el c骴igo fuente de las apps hay algunos Koans que se van desgranando en cada uno de los cap韙ulos del libro:
+Para que el aprendizaje sea interactivo, en el c贸digo fuente de las apps hay algunos Koans que se van desgranando en cada uno de los cap铆tulos del libro:
 
-- Cap韙ulo 2: Implementaci髇 de un servidor RTP (Real Time Protocol)
-- Cap韙ulo 3: L韓ea de comandos remota para controlar el servidor RTP
-- Cap韙ulo 4: Sencilla interfaz web tipo Reproductor para el servidor RTP
-- Cap韙ulo 5: Whizr, clon de Twitter
-- Cap韙ulo 6: Juego Top Memory
+- Cap铆tulo 2: Implementaci贸n de un servidor RTP (Real Time Protocol)
+- Cap铆tulo 3: L铆nea de comandos remota para controlar el servidor RTP
+- Cap铆tulo 4: Sencilla interfaz web tipo Reproductor para el servidor RTP
+- Cap铆tulo 5: Whizr, clon de Twitter
+- Cap铆tulo 6: Juego Top Memory
 
 Para poder ejecutar las aplicaciones y los Koans, es necesario instalar Jasmine, Express y Socket.IO:
 
-	npm -g install express@3.0.0 socket-io@0.9 jasmine-node
+	npm -g install express@3.0.0 socket.io@0.9 jasmine-node
 
-stas aplicaciones est醤 en constante evoluci髇 y se necesita tu ayuda para mejorarlas!
+隆Estas aplicaciones est锟絥 en constante evoluci锟絥 y se necesita tu ayuda para mejorarlas!
 
 
 ENG
@@ -30,7 +30,7 @@ ENG
 
 Node.js Koans are a collection of apps to learn Node.js basis through koans. Koans are gaps in the code to be filled and validated with test cases, in this case written with [Jasmine](http://pivotal.github.io/jasmine/).
 
-The apps were created as examples for the spanish free ebook ["Introducci髇 a Node.js a trav閟 de Koans"](http://nodejskoans.com) ("Introduction to Node.js through Koans").
+The apps were created as examples for the spanish free ebook ["Introducci贸n a Node.js a trav茅s de Koans"](http://nodejskoans.com) ("Introduction to Node.js through Koans").
 
 The book covers some topics on Node.js app creation with its APIs dgram, net and http, and modules [Express](http://expressjs.com) (v3.0) and [Socket.IO](http://socket.io) (v0.9).
 
@@ -44,6 +44,6 @@ To make the learning interactive, inside the source code of the apps there are s
 
 In order to have them running, it is mandatory to install Jasmine, Express and Socket.IO:
 
-	npm -g install express@3.0.0 socket-io@0.9 jasmine-node
+	npm -g install express@3.0.0 socket.io@0.9 jasmine-node
 
 Apps are constantly evolving and your help is needed to improve them!
