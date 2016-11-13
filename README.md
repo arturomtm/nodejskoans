@@ -4,7 +4,7 @@ Node.js Koans (GPL Licensed)
 ESP
 ------
 
-Los Koans para Node.js son una colección de aplicaciones para el aprendizaje de Node.js a través de Koans. Los Koans son huecos en el código que deben completarse y que se validan con casos de prueba, en este caso escritos con [Jasmine](http://pivotal.github.io/jasmine/)
+Los Koans para Node.js son una colección de aplicaciones para el aprendizaje de Node.js a través de Koans. Los Koans son huecos en el código que deben completarse y que se validan con casos de prueba, en este caso escritos con [Jasmine](https://jasmine.github.io/)
 
 Las aplicaciones se han creado como ejemplos para el libro gratuito ["Introducción a Node.js a través de Koans"](http://nodejskoans.com)
 
@@ -28,7 +28,7 @@ Para poder ejecutar las aplicaciones y los Koans, es necesario instalar Jasmine,
 ENG
 ------
 
-Node.js Koans are a collection of apps to learn Node.js basis through koans. Koans are gaps in the code to be filled and validated with test cases, in this case written with [Jasmine](http://pivotal.github.io/jasmine/).
+Node.js Koans are a collection of apps to learn Node.js basis through koans. Koans are gaps in the code to be filled and validated with test cases, in this case written with [Jasmine](https://jasmine.github.io/).
 
 The apps were created as examples for the spanish free ebook ["Introducción a Node.js a través de Koans"](http://nodejskoans.com) ("Introduction to Node.js through Koans").
 
